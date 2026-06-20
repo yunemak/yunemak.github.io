@@ -5,6 +5,7 @@ html {
     box-sizing: border-box;
     color: white;
     font-size: 20px;
+    font-family: "Google Sans", sans-serif;
 }
 
 header, main, footer {
@@ -17,23 +18,23 @@ header, main, footer {
 }
 
 header {
-    background-color: #659287;
+    background-color: #111844;
 }
 
 main {
-    background-color: #88BDA4;
+    background-color: #4B5694;
 }
 
 footer {
     padding: 40px;
-    background-color: #B1D3B9;
+    background-color: #EAE0CF;
 }
 
 .cards {
     padding: 40px;
     width: 600px;
     height: 600px;
-    background-color: #E6F2DD66;
+    background-color: #7288AE;
     color: black;
     border-radius: 10px;
 }
