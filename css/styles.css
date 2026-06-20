@@ -1,5 +1,22 @@
 @import url(./reset.css);
 
 html {
-    background-color: blue;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+}
+
+header {
+    padding: 40px;
+    background-color: #659287;
+}
+
+main {
+    padding: 40px;
+    background-color: #88BDA4;
+}
+
+footer {
+    padding: 40px;
+    background-color: #B1D3B9;
 }
