@@ -1,6 +1,7 @@
 @import url(./reset.css);
 
 html {
+    width: 100vw;
     box-sizing: border-box;
     color: white;
     font-size: 20px;
@@ -9,6 +10,11 @@ html {
 header {
     padding: 40px;
     background-color: #659287;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 main {
