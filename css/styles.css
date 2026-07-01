@@ -35,6 +35,16 @@ ul {
 	background-color: #090e29;
 }
 
+/* Main */
+.content-container {
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+}
+
+main {
+	background-color: black;
+}
+
 /* 
 4B5694
 7288AE
