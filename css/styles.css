@@ -52,9 +52,21 @@ main {
 }
 
 .content {
-	background-color: black;
+	/* Layout Inside */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	gap: 30px;
 }
 
+.img-container {
+	background-color: green;
+}
+
+.p-container {
+	background-color: yellow;
+}
 /* 
 4B5694
 7288AE
