@@ -37,11 +37,21 @@ ul {
 
 /* Main */
 .content-container {
+	background-color: #7288AE; 
+	/* Layout Inside */
 	display: grid;
 	grid-template-columns: 1fr 8fr 1fr;
 }
 
 main {
+	padding: 40px 0px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-auto-rows: 1fr 1fr;
+	gap: 40px;
+}
+
+.content {
 	background-color: black;
 }
 
