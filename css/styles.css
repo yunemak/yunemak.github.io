@@ -26,12 +26,12 @@ ul {
 	justify-content: center;
 }
 
-.menu-link {
+a.menu-link {
 	color: white;
 	padding: 10px;
 }
 
-.menu-link:hover {
+a.menu-link:hover {
 	background-color: #090e29;
 }
 
@@ -52,7 +52,7 @@ ul {
 }
 
 /* Main */
-.content-container {
+.main-container {
 	background-color: #7288AE; 
 	/* Layout Inside */
 	display: grid;
