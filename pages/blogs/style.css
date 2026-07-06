@@ -1,0 +1,45 @@
+@import url("/css/reset.css");
+
+/* Header */
+header {
+	height: 100px;
+	background-color: #111844;
+	font-weight: bold;
+	/* Layout Inside */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	flex: 1;
+}
+
+ul {
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+}
+
+a.menu-link {
+	color: white;
+	padding: 10px;
+}
+
+a.menu-link:hover {
+	background-color: #090e29;
+}
+
+/* Main */
+main {
+	padding: 50px;
+	background-color: #4B5694;
+	/* Layout inside */
+	display: flex;
+	flex-direction: column;
+}
+
+.blog {
+	flex: 1;
+	background-color: #EAE0CF;
+}
