@@ -1,5 +1,10 @@
 @import url("/css/reset.css");
 
+html {
+    font-size: 20px;
+    font-family: "Google Sans", sans-serif;
+}
+
 /* Header */
 header {
 	height: 100px;
@@ -36,10 +41,27 @@ main {
 	background-color: #4B5694;
 	/* Layout inside */
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px;
 }
 
 .blog {
-	flex: 1;
-	background-color: #EAE0CF;
+	box-shadow: 5px 5px 15px #313862;
+	border: 3px solid black;
+	padding: 20px;
+	border-radius: 10px;
+	width: 45%;
+	background-color: white;
+	/* Layout inside */
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 1.4rem;
+}
+
+em {
+	color: rgb(120, 120, 120);
 }
