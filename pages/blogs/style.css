@@ -37,7 +37,7 @@ a.menu-link:hover {
 
 /* Main */
 main {
-	padding: 50px;
+	padding: 20px 0px;
 	background-color: #4B5694;
 	/* Layout inside */
 	display: flex;
@@ -47,11 +47,12 @@ main {
 }
 
 .blog {
+	min-width: 450px;
 	box-shadow: 5px 5px 15px #313862;
 	border: 3px solid black;
 	padding: 20px;
 	border-radius: 10px;
-	width: 45%;
+	width: max(45%);
 	background-color: white;
 	/* Layout inside */
 	display: flex;
@@ -73,4 +74,11 @@ em {
 	padding: 8px 15px;
 	color: white;
 	font-weight: bold;
+}
+
+
+@media (max-width: 960px) {
+  .blog {
+    width: 80vw;
+  }
 }
