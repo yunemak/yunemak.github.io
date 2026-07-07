@@ -49,11 +49,65 @@ console.log(constructorUser);</code></pre>
 			<img src="img/console_obj_output.png">
 			<p>
 				Well, there is not much difference. Just their constructors are different.
-				However, if we use factory function to create an object we don't need to use the keyword <code class="language-js">new</code>.
+				However, if we use factory function to create an object, we don't need to use the keyword <code class="language-js">new</code>.
 				You might think, "Well, I cannot give up on constructors just for this reason."
 				Yeah, you're right. Just prepare.
 			</p>
+			<p class="indent-para">By the way we generally write <em>factory functions in a shorter way:</em></p>
+			<pre class="line-numbers language-js"><code>function createUser(name, age) {
+	return {
+		name: name,
+		age: age,
+	};
+}</code></pre>
+			<p>Or another shorter version:</p>
+			<pre class="line-numbers language-js"><code>function createUser(name, age) {
+	return { name, age };
+}</code></pre>
+			<p>
+				However, I prefer long and detailed version when learning because I can see every detail.
+				Also from my experiences, when I understand long versions I intiutively look for whether there exists a shorter way of doing the same thing.
+				Then, I learn it better.
+			</p>
 			<h2>Closures</h2>
+			<p>
+				What does <em>closure</em> means? Before that we need to know what <em>lexical environment</em> means.
+			</p>
+			<h3>Lexical Environment</h3>
+			<p>
+				Simply a function's scope. Or rather variable environment of a function.
+				For example:
+			</p>
+			<pre class="line-numbers language-js"><code>function func() {
+	let num1 = 24;
+	let num2 = 45;
+	console.log(`${num1} and ${num2}`);
+}
+func(); // 24 and 45
+let num3 = 91;
+console.log(`${num3}`); // 91</code></pre>
+			<p>
+				The output is expected. Here,
+				<ul class="list">
+					<li>In global lexical environment, <code class="language-js">num3</code> is defined.</li>
+					<li>In <code class="language-js">func()</code>'s lexical environment, <code class="language-js">num1</code> and <code class="language-js">num2</code> are defined.</li>
+				</ul>
+			</p>
+			<p>
+				Well, what would happen if we call <code class="language-js">num3</code> in function <code class="language-js">func()</code>.
+			</p>
+			<pre class="line-numbers language-js"><code>function func() {
+	let num1 = 24;
+	let num2 = 45;
+	console.log(`${num1} and ${num2} and ${num3}`);
+}
+func();</code></pre>
+			<img src="img/lexical_env.png">
+			<p>
+				It couldn't find that <em>lexical declaration</em>. So as a result, every function has a lexical environment.
+				It's first inside of it. Second above of it. When it needs, it looks for that <em>lexical declaration</em> first inside of its scope.
+				If it cannot find it there, it looks above. 
+			</p>
 		</main>
 	</div>
 </body>
