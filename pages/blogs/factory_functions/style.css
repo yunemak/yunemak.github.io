@@ -31,7 +31,7 @@ h1 {
 	font-size: 2rem;
 }
 
-p {
+.indent-para {
 	text-indent: 2rem;
 }
 

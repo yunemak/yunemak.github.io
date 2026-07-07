@@ -16,13 +16,43 @@
 	<div class="main-container">
 		<main>
 			<h1>Factory Functions</h1>
-			<p>
+			<p class="indent-para">
 				First of all let's see what are these <em>factory functions</em> in an example.
 				Please read the following function and try to explain it <span class="underline">in your words</span>.
 			</p>
-			<pre><code class="language-js">const x = 0;
-			</code></pre>
-			<p>para 2</p>
+			<pre class="line-numbers language-js"><code>function createUser(name, age) {
+	let user = {};
+	user.name = name;
+	user.age = age;
+	return user;
+}</code></pre>
+			<p>
+				You said pretty easily, right?
+				So, this is a factory function. Definition is simple:
+				A function which returns an object is a <em>factory function</em>.
+				Now, let's see a similar code snippet.
+			</p>
+			<pre class="line-numbers language-js"><code>function User(name, age) {
+	this.name = name;
+	this.age = age;
+}</code></pre>
+			<p>
+				Here, we implemented object creation with a constructor.
+				Well, if we were to create two objects with same parameters, there would be any difference between these objects?
+				Let's experiment.
+			</p>
+			<pre class="line-numbers language-js"><code>let factoryUser = createUser("Yunus", 22);
+let constructorUser = new User("Yunus", 22);
+console.log(factoryUser);
+console.log(constructorUser);</code></pre>
+			<img src="img/console_obj_output.png">
+			<p>
+				Well, there is not much difference. Just their constructors are different.
+				However, if we use factory function to create an object we don't need to use the keyword <code class="language-js">new</code>.
+				You might think, "Well, I cannot give up on constructors just for this reason."
+				Yeah, you're right. Just prepare.
+			</p>
+			
 		</main>
 	</div>
 </body>
