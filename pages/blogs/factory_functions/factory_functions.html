@@ -101,13 +101,60 @@ console.log(`${num3}`); // 91</code></pre>
 	let num2 = 45;
 	console.log(`${num1} and ${num2} and ${num3}`);
 }
-func();</code></pre>
+func();
+let num3 = 91;</code></pre>
 			<img src="img/lexical_env.png">
 			<p>
 				It couldn't find that <em>lexical declaration</em>. So as a result, every function has a lexical environment.
 				It's first inside of it. Second above of it. When it needs, it looks for that <em>lexical declaration</em> first inside of its scope.
 				If it cannot find it there, it looks above. 
 			</p>
+			<p>
+				So if we would declare <code class="language-js">num3</code> before calling that function:
+			</p>
+			<pre class="line-numbers language-js"><code>function func() {
+	let num1 = 24;
+	let num2 = 45;
+	console.log(`${num1} and ${num2} and ${num3}`);
+}
+let num3 = 91;
+func(); // 24 and 45 and 91</code></pre>
+			<p>Function first checked its inside scope (or lexical environment), then checked above lexical environment.</p>
+			<h3>First example to closures</h3>
+			<p class="indent-para">
+				Let's imagine we're building a simple banking system that offers savings accounts to customers.
+				Each account should store the customer's name and ID, and every new account starts with a balance of 0.
+				As part of the bank's savings policy, customers are not allowed to withdraw their money until they reach their savings goal. In other words, we want to restrict what can be done with an account. Customers should be able to deposit money and check their balance, but they shouldn't be able to modify the balance directly or perform unauthorized operations.
+				This is a perfect scenario for combining factory functions with closures.
+			</p>
+			<pre class="line-numbers language-js"><code>function createSavingAccount(name, id) {
+	let account = {};
+	account.name = name;
+	account.id = id;
+	
+	// Balance operations
+	let balance = 0;
+	let getBalance = function () {
+		return balance;
+	}
+	let increaseBalance = function (amount) {
+		balance += amount;
+	}
+	account.getBalance = getBalance;
+	account.increaseBalance = increaseBalance;
+	return account;
+}</code></pre>
+			<p>
+				In above <em>factory function</em> we defined balance. However, we didn't give it as a property to the returned object.
+				So if we try to access it:
+			</p>
+			<pre class="line-numbers language-js"><code>let myAccount = createSavingAccount("Yunus", 1453);
+console.log(myAccount.balance); // undefined</code></pre>
+			<p>
+				As you can see, it cannot be accessed anymore. However this doesn't mean it does not exist anymore.
+				We defined functions to use it, so let's use them.
+			</p>
+		
 		</main>
 	</div>
 </body>
