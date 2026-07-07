@@ -154,7 +154,15 @@ console.log(myAccount.balance); // undefined</code></pre>
 				As you can see, it cannot be accessed anymore. However this doesn't mean it does not exist anymore.
 				We defined functions to use it, so let's use them.
 			</p>
-		
+			<pre class="line-numbers language-js"><code>let myAccount = createSavingAccount("Yunus", 1453);
+console.log(myAccount.getBalance()); // 0
+myAccount.increaseBalance(570);
+console.log(myAccount.getBalance()); // 570</code></pre>
+			<p>
+				Here the variable <code class="language-js">balance</code> is a <em>private variable</em>.
+				We cannot access it directly, however we can manipulate it within the given methods.
+				The functions that allows us to use those <em>private variables</em> and <em>private variables</em> together constitutes <em>closures</em>.
+			</p><!-- IEFI ları tanımla ve nasıl kullanışlı olduklarını göster-->
 		</main>
 	</div>
 </body>
