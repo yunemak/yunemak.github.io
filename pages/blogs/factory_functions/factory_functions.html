@@ -162,7 +162,48 @@ console.log(myAccount.getBalance()); // 570</code></pre>
 				Here the variable <code class="language-js">balance</code> is a <em>private variable</em>.
 				We cannot access it directly, however we can manipulate it within the given methods.
 				The <em>functions</em> that allows us to use those private variables and <em>private variables</em> together constitutes <em>closures</em>.
-			</p><!-- IEFI ları tanımla ve nasıl kullanışlı olduklarını göster-->
+			</p>
+			<p>
+				If you were a bad guy and try to bypass our limited access, you could do something similar in the console:
+			</p>
+			<img src="img/withdraw_func.png">
+			<p>
+				As you see a bad guy tried to manipulate the variable. However, it didn't work because the lexical environment which function defined
+				does not contain <code class="language-js">balance</code>. 
+			</p>
+			<p>
+				I think you learned a great functionality of factory functions. Let's expand that with <em>IIFEs</em> (Immediately Invoked Function Expression).
+			</p>
+			<h2>IIFE</h2>
+			<p class="indent-para">
+				As name suggests these functions are called immediately after they declared.
+				Let's see a simple and useless example:
+			</p>
+			<pre class="line-numbers language-js"><code>let age = function () {return 22;}();
+console.log(age); // 22</code></pre>
+			<p>
+				Let's explain first line. We first declared a variable called <code class="language-js">age</code>.
+				Then immediately defined a simple function that just does <code class="language-js">return 22;</code>.
+				And finally putting <code class="language-js">()</code> at the end of the declaration of function, we invoked it immediately.
+			</p>
+			<p>
+				It is important to understand what this is now. So we will give more examples:
+			</p>
+			<pre class="line-numbers language-js"><code>let name = (() => "Yunus")();
+console.log(name); // Yunus</code></pre>
+			<p>
+				Here we declared a variable called <code class="language-js">name</code>.
+				Then immediately defined an arrow function that just does <code class="language-js">return "Yunus";</code>.
+				Then we wrapped it up with paranthesis and add <code class="language-js">()</code> at the end.
+				So we invoked it immediately after defining it.
+			</p>
+			<p>
+				At this point you should wonder why are we doing this? It's for historical reasons.
+				Actually you do not need to know this anymore, we don't need it.
+				However if you still want to learn why we used it before you can check this blog.
+			</p>
+
+			<!-- IIFE ları tanımla ve nasıl kullanışlı olduklarını göster-->
 		</main>
 	</div>
 </body>
