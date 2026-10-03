@@ -18,3 +18,26 @@
 .hero-img > img {
 	width: 100%;
 }
+
+/* Introduction */
+.hero-links {
+	display: flex;
+	gap: 20px;
+}
+
+.account-link {
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.account-link img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
