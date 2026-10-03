@@ -8,6 +8,7 @@
 	/* Layout */
 	display: grid;
 	grid-template-columns: 6fr 4fr;
+	align-items: center;
 	gap: 40px;
 }
 
@@ -43,5 +44,3 @@
 	object-fit: contain;
 	display: block;
 }
-
-/* Introduction */

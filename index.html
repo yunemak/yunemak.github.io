@@ -12,6 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/css/style.css" />
+		<script src="./js/game-mechanics.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -38,9 +39,15 @@
 			</nav>
 		</header>
 		<main>
+			<!-- Hero Section -->
 			<section class="hero-section">
-				<div class="hero-introduction">
-					<h1>Yunus Emre Ak</h1>
+				<div class="hero-game">
+					<canvas id="game-canvas"></canvas>
+
+					<div class="game-controls">
+						<span>A D / ← → Move</span>
+						<span>Space Jump</span>
+					</div>
 				</div>
 				<div class="hero-img">
 					<img src="/img/profile.png" alt="Illustration of me" />
@@ -55,11 +62,19 @@
 						</a>
 						<a
 							class="account-link"
-							href="https://www.linkedin.com/in/yunus-emre-ak-83b103249/"
+							href="https://www.linkedin.com/in/yunus-emre-ak-83b103249"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							<img src="./img/linkedin.png" alt="42 Profile" />
+						</a>
+						<a
+							class="account-link"
+							href="https://dev.to/yunemak"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img src="./img/dev-logo.png" alt="42 Profile" />
 						</a>
 					</div>
 				</div>
