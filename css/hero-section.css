@@ -13,16 +13,18 @@
 
 .hero-img {
 	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .hero-img > img {
-	width: 100%;
+	width: 80%;
 }
 
-/* Introduction */
 .hero-links {
 	display: flex;
-	gap: 20px;
+	justify-content: space-around;
 }
 
 .account-link {
@@ -41,3 +43,5 @@
 	object-fit: contain;
 	display: block;
 }
+
+/* Introduction */
