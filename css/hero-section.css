@@ -1,0 +1,20 @@
+.hero-section {
+	background-color: white;
+	margin: 20px auto;
+	width: 90%;
+	height: 800px;
+	border-radius: 5px;
+	padding: 40px;
+	/* Layout */
+	display: grid;
+	grid-template-columns: 6fr 4fr;
+	gap: 40px;
+}
+
+.hero-img {
+	align-self: center;
+}
+
+.hero-img > img {
+	width: 100%;
+}
