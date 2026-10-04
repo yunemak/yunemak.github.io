@@ -1,0 +1,7 @@
+#react-card {
+	color: white;
+	background-image: url("../img/react-cover.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
