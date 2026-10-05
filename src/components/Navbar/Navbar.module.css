@@ -35,3 +35,18 @@
 .menuLink:hover {
 	background-color: var(--color-blue-dark-hover);
 }
+
+@media (max-width: 1240px) {
+	.header {
+		height: 70px;
+	}
+
+	.header .ul {
+		gap: 10px;
+	}
+
+	.menuLink {
+		padding: 8px;
+		font-size: 0.85rem;
+	}
+}

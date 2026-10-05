@@ -3,8 +3,9 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import "./styles/reset.css";
 import "./styles/def.css";
+import "./styles/index.css";
 
-import Layout from "./components/Layout.jsx";
+import Layout from "./components/Layout/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Docs from "./pages/Docs.jsx";
