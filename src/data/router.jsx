@@ -7,6 +7,7 @@ import About from "@/pages/About.jsx";
 import Docs from "@/pages/Docs.jsx";
 import Projects from "@/pages/Projects.jsx";
 import Labs from "@/pages/Labs/Labs.jsx";
+import Lab from "@/pages/Lab/Lab";
 
 export const router = createBrowserRouter([
 	{
@@ -38,5 +39,9 @@ export const router = createBrowserRouter([
 	{
 		path: "/labs/:category",
 		element: <LabPool />,
+	},
+	{
+		path: "/labs/:category/:labId",
+		element: <Lab />,
 	},
 ]);

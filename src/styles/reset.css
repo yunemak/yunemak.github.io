@@ -8,10 +8,6 @@ a {
 	text-decoration: none;
 }
 
-li {
-	list-style-type: none;
-}
-
 input {
 	outline: none; /* Chromium adds auto */
 }
