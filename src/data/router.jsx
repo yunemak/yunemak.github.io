@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router";
+import LabPool from "@/components/LabPool/LabPool.jsx";
 
 import Layout from "@/components/Layout/Layout.jsx";
 import Home from "@/pages/Home.jsx";
@@ -6,10 +7,6 @@ import About from "@/pages/About.jsx";
 import Docs from "@/pages/Docs.jsx";
 import Projects from "@/pages/Projects.jsx";
 import Labs from "@/pages/Labs/Labs.jsx";
-import HtmlLabs from "@/pages/HtmlLabs/HtmlLabs.jsx";
-import CssLabs from "@/pages/CssLabs/CssLabs.jsx";
-import JavaScriptLabs from "@/pages/JavaScriptLabs/JavaScriptLabs.jsx";
-import ReactLabs from "@/pages/ReactLabs/ReactLabs.jsx";
 
 export const router = createBrowserRouter([
 	{
@@ -39,20 +36,7 @@ export const router = createBrowserRouter([
 		],
 	},
 	{
-		path: "/labs/html",
-		element: <HtmlLabs />,
-	},
-
-	{
-		path: "/labs/css",
-		element: <CssLabs />,
-	},
-	{
-		path: "/labs/javascript",
-		element: <JavaScriptLabs />,
-	},
-	{
-		path: "/labs/react",
-		element: <ReactLabs />,
+		path: "/labs/:category",
+		element: <LabPool />,
 	},
 ]);
