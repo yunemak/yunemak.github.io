@@ -1,3 +1,5 @@
+import profileImg from "../assets/profile.png";
+
 const Hero = () => {
 	return (
 		<section className="hero-section">
@@ -11,7 +13,7 @@ const Hero = () => {
 			</div>
 
 			<div className="hero-img">
-				<img src="/img/profile.png" alt="Illustration of me" />
+				<img src={profileImg} alt="Illustration of me" />
 
 				<div className="hero-links">
 					<a
