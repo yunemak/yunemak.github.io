@@ -39,6 +39,22 @@ const router = createBrowserRouter([
 			},
 		],
 	},
+	{
+		path: "/labs/react",
+		element: <ReactLabs />,
+	},
+	{
+		path: "/labs/css",
+		element: <CssLabs />,
+	},
+	{
+		path: "/labs/javascript",
+		element: <JavaScriptLabs />,
+	},
+	{
+		path: "/labs/html",
+		element: <HtmlLabs />,
+	},
 ]);
 
 createRoot(document.getElementById("root")).render(
