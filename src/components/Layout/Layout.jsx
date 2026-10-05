@@ -1,17 +1,17 @@
 import { Outlet } from "react-router";
 import Navbar from "@/components/Navbar/Navbar.jsx";
+import Footer from "@/components/Footer/Footer";
+
 import styles from "./Layout.module.css";
 
 const Layout = () => {
 	return (
 		<div className={styles.root}>
 			<Navbar />
-
-			<Outlet />
-
-			<footer>
-				<p>yunemak</p>
-			</footer>
+			<main>
+				<Outlet />
+			</main>
+			<Footer />
 		</div>
 	);
 };
