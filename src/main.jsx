@@ -10,7 +10,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Docs from "./pages/Docs.jsx";
 import Projects from "./pages/Projects.jsx";
-import Labs from "./pages/Labs.jsx";
+import Labs from "./pages/Labs/Labs.jsx";
 
 const router = createBrowserRouter([
 	{
