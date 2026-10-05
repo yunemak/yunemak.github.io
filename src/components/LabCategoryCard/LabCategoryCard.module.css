@@ -1,5 +1,5 @@
 /* labCategoryCard.module.css */
 
-.categoryCard {
-	background-color: red;
+.categoryCard img{
+	width: 100%;
 }
