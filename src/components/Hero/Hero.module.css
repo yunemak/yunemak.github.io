@@ -36,9 +36,10 @@
 	width: 100%;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
 	.hero {
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column;
 	}
 	.profile {
 		order: -1;

@@ -1,5 +1,11 @@
 /* labCategoryCard.module.css */
 
-.categoryCard img{
+.categoryCard img {
 	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.categoryCard img {
+		height: 100%;
+	}
 }
