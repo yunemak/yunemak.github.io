@@ -1,88 +1,13 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>yunemak</title>
-		<!-- Links -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href="/css/hero-section.css" />
-		<script src="./js/game-mechanics.js" defer></script>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li>
-						<a class="menu-link" href="#" id="selected-link"
-							>Home</a
-						>
-					</li>
-					<li>
-						<a class="menu-link" href="pages/docs/index.html"
-							>Docs</a
-						>
-					</li>
-					<li><a class="menu-link" href="#">About</a></li>
-					<li><a class="menu-link" href="#">Projects</a></li>
-					<li>
-						<a class="menu-link" href="./pages/labs/index.html"
-							>Labs</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<!-- Hero Section -->
-			<section class="hero-section">
-				<div class="hero-game">
-					<canvas id="game-canvas"></canvas>
-
-					<div class="game-controls">
-						<span>A D / ← → Move</span>
-						<span>Space Jump</span>
-					</div>
-				</div>
-				<div class="hero-img">
-					<img src="/img/profile.png" alt="Illustration of me" />
-					<div class="hero-links">
-						<a
-							class="account-link"
-							href="https://yuak42.github.io"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src="./img/42-logo.png" alt="42 Profile" />
-						</a>
-						<a
-							class="account-link"
-							href="https://www.linkedin.com/in/yunus-emre-ak-83b103249"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src="./img/linkedin.png" alt="42 Profile" />
-						</a>
-						<a
-							class="account-link"
-							href="https://dev.to/yunemak"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src="./img/dev-logo.png" alt="42 Profile" />
-						</a>
-					</div>
-				</div>
-			</section>
-			<section></section>
-			<section></section>
-		</main>
-		<footer>footer</footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yunemak.github.io</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
