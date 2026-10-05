@@ -1,0 +1,223 @@
+/* ========================================
+   MARKDOWN / BLOG
+   ======================================== */
+
+.markdown-body {
+	max-width: 850px;
+	margin: 40px auto;
+	padding: 32px;
+
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+/* Headings */
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+	line-height: 1.25;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.markdown-body h1 {
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
+.markdown-body h2 {
+	font-size: 1.8rem;
+	padding-bottom: 0.4rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.markdown-body h3 {
+	font-size: 1.4rem;
+}
+
+.markdown-body h4 {
+	font-size: 1.15rem;
+}
+
+/* Paragraph */
+
+.markdown-body p {
+	display: block;
+	margin: 1rem 0;
+	line-height: 1.7;
+}
+
+/* Lists */
+
+.markdown-body ul,
+.markdown-body ol {
+	display: block;
+	margin: 1rem 0;
+	padding-left: 2rem;
+}
+
+.markdown-body ul {
+	list-style-type: disc;
+}
+
+.markdown-body ol {
+	list-style-type: decimal;
+}
+
+.markdown-body li {
+	display: list-item;
+	margin: 0.4rem 0;
+}
+
+.markdown-body li > ul,
+.markdown-body li > ol {
+	margin: 0.3rem 0;
+}
+
+/* Inline Code */
+
+.markdown-body code {
+	font-family: "Courier New", monospace;
+	font-size: 0.9em;
+
+	background-color: #eeeeee;
+
+	padding: 0.15rem 0.4rem;
+	border-radius: 4px;
+}
+
+/* Code Blocks */
+
+.markdown-body pre {
+	display: block;
+
+	background-color: #1e1e1e;
+	color: #f5f5f5;
+
+	padding: 1rem;
+	margin: 1.2rem 0;
+
+	border-radius: 8px;
+
+	overflow-x: auto;
+	line-height: 1.5;
+}
+
+/* Remove inline-code styling inside code blocks */
+
+.markdown-body pre code {
+	display: block;
+
+	background: none;
+	color: inherit;
+
+	padding: 0;
+	border-radius: 0;
+
+	font-size: 0.9rem;
+	white-space: pre;
+}
+
+/* Links */
+
+.markdown-body a {
+	color: #0969da;
+	text-decoration: none;
+}
+
+.markdown-body a:hover {
+	text-decoration: underline;
+}
+
+/* Blockquotes */
+
+.markdown-body blockquote {
+	margin: 1.5rem 0;
+	padding: 0.5rem 1rem;
+
+	border-left: 4px solid #aaa;
+
+	color: #555;
+	background-color: #f7f7f7;
+}
+
+/* Horizontal Rule */
+
+.markdown-body hr {
+	border: 0;
+	border-top: 1px solid #ddd;
+
+	margin: 2rem 0;
+}
+
+/* Images */
+
+.markdown-body img {
+	display: block;
+
+	max-width: 100%;
+	height: auto;
+
+	margin: 1.5rem auto;
+
+	border-radius: 6px;
+}
+
+/* Tables */
+
+.markdown-body table {
+	width: 100%;
+
+	margin: 1.5rem 0;
+
+	border-collapse: collapse;
+
+	overflow-x: auto;
+}
+
+.markdown-body th,
+.markdown-body td {
+	padding: 0.7rem 1rem;
+
+	border: 1px solid #ddd;
+
+	text-align: left;
+}
+
+.markdown-body th {
+	font-weight: 600;
+	background-color: #f5f5f5;
+}
+
+/* Strong / Emphasis */
+
+.markdown-body strong {
+	font-weight: 700;
+}
+
+.markdown-body em {
+	font-style: italic;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+	.markdown-body {
+		padding: 20px;
+		margin: 20px auto;
+	}
+
+	.markdown-body h1 {
+		font-size: 2rem;
+	}
+
+	.markdown-body h2 {
+		font-size: 1.5rem;
+	}
+
+	.markdown-body pre {
+		padding: 0.8rem;
+	}
+}

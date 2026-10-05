@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="/css/markdown.css" />
+		<title>React Router Basics</title>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	</head>
+
+	<body>
+		<main class="article-container">
+			<article class="markdown-body" id="article"></article>
+		</main>
+
+		<script>
+			fetch("./article.md")
+				.then((response) => response.text())
+				.then((markdown) => {
+					document.querySelector("#article").innerHTML =
+						marked.parse(markdown);
+				});
+		</script>
+	</body>
+</html>
