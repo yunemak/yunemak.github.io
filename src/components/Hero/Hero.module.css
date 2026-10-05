@@ -1,0 +1,33 @@
+.hero {
+	margin: 0 50px;
+	display: grid;
+	grid-template-columns: 7fr 3fr;
+	gap: 20px;
+}
+
+.game {
+	background-color: black;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.profileImgStyle {
+	width: 100%;
+}
+
+@media (max-width: 1240px) {
+	.hero {
+		grid-template-columns: 1fr;
+	}
+	.profile {
+		order: -1;
+	}
+	.game {
+		height: 500px;
+	}
+}

@@ -1,23 +1,28 @@
 import profileImg from "@/assets/profile.png";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
 	return (
-		<section className="hero-section">
-			<div className="hero-game">
+		<section className={styles.hero}>
+			<div className={styles.game}>
 				<canvas id="game-canvas"></canvas>
 
-				<div className="game-controls">
+				<div className={styles.gameControls}>
 					<span>A D / ← → Move</span>
 					<span>Space Jump</span>
 				</div>
 			</div>
 
-			<div className="hero-img">
-				<img src={profileImg} alt="Illustration of me" />
+			<div className={styles.profile}>
+				<img
+					src={profileImg}
+					className={styles.profileImgStyle}
+					alt="Illustration of me"
+				/>
 
-				<div className="hero-links">
+				<div className={styles.profileLinks}>
 					<a
-						className="account-link"
+						className={styles.accountLink}
 						href="https://yuak42.github.io"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -26,7 +31,7 @@ const Hero = () => {
 					</a>
 
 					<a
-						className="account-link"
+						className={styles.accountLink}
 						href="https://www.linkedin.com/in/yunus-emre-ak-83b103249"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -35,7 +40,7 @@ const Hero = () => {
 					</a>
 
 					<a
-						className="account-link"
+						className={styles.accountLink}
 						href="https://dev.to/yunemak"
 						target="_blank"
 						rel="noopener noreferrer"
