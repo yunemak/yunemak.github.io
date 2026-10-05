@@ -1,0 +1,37 @@
+/* Navbar.module.css */
+
+.header {
+	background-color: var(--color-blue-dark);
+	display: flex;
+}
+
+.nav {
+	flex: 1;
+	display: flex;
+}
+
+.ul {
+	flex: 1;
+	padding: 20px;
+	/* Layout inside */
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menuLink {
+	padding: 5px 10px;
+	text-align: center;
+	font-weight: 500;
+	color: white;
+}
+
+.menuLink:hover {
+	background-color: var(--color-blue-dark-hover);
+}

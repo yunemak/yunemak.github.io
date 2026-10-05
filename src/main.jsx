@@ -1,10 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import "./styles/index.css";
+import "./styles/reset.css";
+import "./styles/def.css";
 
 import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -14,6 +16,10 @@ const router = createBrowserRouter([
 			{
 				index: true,
 				element: <Home />,
+			},
+			{
+				path: "about",
+				element: <About />,
 			},
 		],
 	},
