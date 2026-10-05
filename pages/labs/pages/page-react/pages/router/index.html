@@ -6,7 +6,13 @@
 
 		<link rel="stylesheet" href="/css/markdown.css" />
 		<title>React Router Basics</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css"
+		/>
 		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/bash.min.js"></script>
 	</head>
 
 	<body>
@@ -20,6 +26,8 @@
 				.then((markdown) => {
 					document.querySelector("#article").innerHTML =
 						marked.parse(markdown);
+
+					hljs.highlightAll();
 				});
 		</script>
 	</body>
