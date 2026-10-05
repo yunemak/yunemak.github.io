@@ -14,9 +14,25 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 20px;
 }
 
 .profileImgStyle {
+	width: 100%;
+}
+
+.profileLinks {
+	display: flex;
+	gap: 20px;
+}
+
+.profileLink {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.profileLink img {
 	width: 100%;
 }
 
