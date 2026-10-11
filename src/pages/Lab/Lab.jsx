@@ -4,10 +4,25 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import reactRouterMarkdown from "@/labs/react/react-router.md?raw";
+import fetchDataMarkdown from "@/labs/javascript/fetch-data.md?raw";
 import styles from "./Lab.module.css";
+
+const labContents = {
+	react: {
+		"react-router": reactRouterMarkdown,
+	},
+	javascript: {
+		"fetch-data": fetchDataMarkdown,
+	},
+};
 
 const Lab = () => {
 	const { category, labId } = useParams();
+	const markdown = labContents[category]?.[labId];
+
+	if (!markdown) {
+		return <p>Lab not found.</p>;
+	}
 
 	return (
 		<main className={styles.lab}>
@@ -35,7 +50,7 @@ const Lab = () => {
 						},
 					}}
 				>
-					{reactRouterMarkdown}
+					{markdown}
 				</ReactMarkdown>
 			</article>
 		</main>

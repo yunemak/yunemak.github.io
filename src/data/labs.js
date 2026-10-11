@@ -8,6 +8,12 @@ export const labs = {
 	],
 
 	css: [],
-	javascript: [],
+	javascript: [
+		{
+			id: "fetch-data",
+			title: "Fetch Data",
+			description: "Learn how to fetch data using Vanilla Javascript.",
+		},
+	],
 	html: [],
 };
